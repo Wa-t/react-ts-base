@@ -9,4 +9,5 @@ module.exports = {
   appPublic: resolve('public'),
   appIndex: resolve('src/index.tsx'),
   appHtml: resolve('public/index.html'),
+  appSrc: resolve('src'),
 }

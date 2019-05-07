@@ -1,9 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const path = require('./path');
+const paths = require('./path');
 
 module.exports = {
   resolve: {
-    extensions: ['.tsx', '.ts', '.js', '.json']
+    extensions: ['.ts', '.tsx', '.js', '.json'],
+    alias: {
+      '@': paths.appSrc
+    }
   },
   devtool: 'source-map',
   module: {
@@ -22,7 +25,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'React app',
-      template: path.appHtml,
+      template: paths.appHtml,
       inject: false,
     })
   ]
