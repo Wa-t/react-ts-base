@@ -15,9 +15,9 @@ module.exports = merge.smart(baseConfig, {
     new webpack.NamedModulesPlugin()
   ],
   devServer: {
-    historyApiFallback: true, // 当使用 HTML5 History API 时，任意的 404 响应都可能需要被替代为 index.html
+    // historyApiFallback: true, // 当使用 HTML5 History API 时，任意的 404 响应都可能需要被替代为 index.html
     disableHostCheck: true,
-    host: '0.0.0.0',
+    host: 'localhost',
     port: '8000',
     inline: true,
     hot: true,
