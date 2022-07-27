@@ -1,4 +1,4 @@
-# React Typescript Base
-react + typescript 基本脚手架，用于扩展其他脚手架
 
-* [react-ts-redux](https://github.com/Wa-t/react-ts-redux)
+src/utils.js中的 getGeo方法请求.bin文件并缓存
+
+src/pages/index.jsx  使用getGeo返回的数据

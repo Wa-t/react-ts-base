@@ -1,8 +1,7 @@
 const merge = require('webpack-merge')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-
-const path = require('./path')
+const paths = require('./path')
 
 const baseConfig = require('./webpack.config.base')
 

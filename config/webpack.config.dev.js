@@ -21,6 +21,7 @@ module.exports = merge.smart(baseConfig, {
     port: '8000',
     inline: true,
     hot: true,
+    contentBase: '../public',
     proxy: {
       '/api': {
         // 这里改为项目后端 API 接口 Host

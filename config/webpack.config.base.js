@@ -3,7 +3,7 @@ const paths = require('./path');
 
 module.exports = {
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json'],
+    extensions: ['.js', '.jsx', '.json'],
     alias: {
       '@': paths.appSrc
     }
@@ -12,13 +12,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        loader: 'source-map-loader',
-        enforce: "pre"
-      },
-      {
-        test: /\.(tsx|ts)/,
-        loader: 'ts-loader'
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        }
       }
     ]
   },

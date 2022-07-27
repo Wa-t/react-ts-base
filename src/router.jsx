@@ -3,7 +3,7 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import App from '@/app/index'
 
 export default class RouteMap extends React.PureComponent {
-  public render() {
+   render() {
     return (
       <Router>
         <Switch>

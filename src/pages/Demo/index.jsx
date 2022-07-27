@@ -1,9 +1,9 @@
 import React from 'react'
 
 class Demo extends React.Component {
-  public render() {
+   render() {
     return(
-      <div>demo1</div>
+      <div>demo</div>
     )
   }
 }
